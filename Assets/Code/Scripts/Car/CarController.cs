@@ -63,6 +63,8 @@ public class CarController : MonoBehaviour
 
         if (player != null) return;
 
+        if (!_carModel.IsDriving) return;
+        
         var knock = other.gameObject.GetComponent<IKnockable>();
         if (knock != null) knock.Knock(_knockForce, (other.transform.position - transform.position).normalized);
         
