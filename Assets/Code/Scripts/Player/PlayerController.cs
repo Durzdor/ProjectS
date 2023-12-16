@@ -31,7 +31,6 @@ namespace Character
         private void Update()
         {
             _lookDir = (inputController.MousePosition - (Vector2)transform.position).normalized;
-            print(_lookDir);
             playerModel.Move(inputController.Movement);
             playerModel.LookAt(_lookDir);
             

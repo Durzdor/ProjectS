@@ -2,58 +2,50 @@ using UnityEngine;
 
 public class PlayerUIController : MonoBehaviour
 {
-    [SerializeField] private BookAnimations popupMenu;
-    [SerializeField] private GameObject menuContent;
-    
+    [SerializeField] private GameObject popupMenu;
     private InventoryDisplay _playerInventory;
     private CraftDisplay _playerCrafting;
     private EquipmentDisplay _playerEquipment;
 
     private int _currentFilter;
-    private int _lengthFilter = 2; // 0=Inventory 1=Crafting 2=Equipment 3=Quests 4=Menu
+    private int _lengthFilter = 2; // 0=Inventory 1=Crafting 2=Equipment
 
     private void Awake()
     {
         _playerInventory = GetComponent<InventoryDisplay>();
         _playerCrafting = GetComponent<CraftDisplay>();
         _playerEquipment = GetComponent<EquipmentDisplay>();
-        popupMenu.OnFullOpenComplete += FullOpenHandler;
-        popupMenu.OnFullCloseComplete += FullCloseHandler;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             AudioManager.Instance.PlayInventorySound();
             ScreenBg();
             ShowInventory();
             _currentFilter = 0;
         }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            ScreenBg();
+            ShowCrafting();
+            _currentFilter = 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            ScreenBg();
+            ShowEquipment();
+            _currentFilter = 2;
+        }
     }
 
     private void ScreenBg()
     {
-        var ena = popupMenu.gameObject.activeInHierarchy;
-        if (!ena)
-        {
-            popupMenu.gameObject.SetActive(true);
-            popupMenu.FullBookOpen();
-        }
-        else
-        {
-            menuContent.SetActive(false);
-            popupMenu.FullBookClose();
-        }
-    }
-
-    private void FullOpenHandler()
-    {
-        menuContent.SetActive(true);
-    }
-    private void FullCloseHandler()
-    {
-        popupMenu.gameObject.SetActive(false);
+        var ena = popupMenu.activeInHierarchy;
+        popupMenu.SetActive(!ena);
     }
 
     private void ShowInventory()
@@ -75,20 +67,6 @@ public class PlayerUIController : MonoBehaviour
         _playerInventory.Hide();
         _playerCrafting.Hide();
         _playerEquipment.Show();
-    }
-    
-    private void ShowQuestLog()
-    {
-        _playerInventory.Hide();
-        _playerCrafting.Hide();
-        _playerEquipment.Hide();
-    }
-    
-    private void ShowSettings()
-    {
-        _playerInventory.Hide();
-        _playerCrafting.Hide();
-        _playerEquipment.Hide();
     }
 
     [ContextMenu("NextFilter")]
@@ -112,12 +90,6 @@ public class PlayerUIController : MonoBehaviour
             _currentFilter = _lengthFilter;
         }
 
-        SwitchUi();
-    }
-
-    public void SetFilter(int filter)
-    {
-        _currentFilter = filter;
         SwitchUi();
     }
 

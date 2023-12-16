@@ -8,6 +8,7 @@ TagManager:
   - PlayerDetection
   - EnemyZombie
   - EnemyBoss
+  - MeleeWeapon
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - PlayerAttack
   - Enemy
   - MiniMap
-  - 
+  - MapUI
   - 
   - 
   - 
