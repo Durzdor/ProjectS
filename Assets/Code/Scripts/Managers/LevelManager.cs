@@ -7,6 +7,8 @@ public class LevelManager : MonoBehaviour
 {
     // Agrega una referencia a LevelLoader
     private LevelLoader levelLoader;
+    [SerializeField] private GameObject _creditsPanel;
+
 
     private void Awake()
     {
@@ -38,5 +40,15 @@ public class LevelManager : MonoBehaviour
     public void GameQuit()
     {
         Application.Quit();
+    }
+
+    public void PanelActive()
+    {
+        _creditsPanel.SetActive(true);
+    }
+
+    public void PanelInactive()
+    {
+        _creditsPanel.SetActive(false);
     }
 }
