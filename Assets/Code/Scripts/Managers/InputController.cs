@@ -13,10 +13,17 @@ public class InputController : MonoBehaviour
     public Vector2 MousePosition => _mousePosition;
 
     private bool _primaryFirePerformed;
+    private bool _interactPerformed;
     public event Action PrimaryFireEventStarted;
     public event Action PrimaryFireEventPerformed;
     public event Action PrimaryFireEventCanceled;
+    
+    public event Action InteractEventStarted;
+    public event Action InteractEventPerformed;
+    public event Action InteractEventCanceled;
+    
     public bool PrimaryFirePerformed => _primaryFirePerformed;
+    public bool InteractPerformed => _interactPerformed;
     
     private Camera _camera;
     
@@ -57,6 +64,27 @@ public class InputController : MonoBehaviour
         {
             PrimaryFireEventCanceled?.Invoke();
             _primaryFirePerformed = false;
+        }
+    }
+    
+    public void Interact(InputAction.CallbackContext context)
+    {
+        Debug.Log($"Interact: {_interactPerformed}");
+        
+        if (context.started)
+        {
+            InteractEventStarted?.Invoke();
+            _interactPerformed = true;
+        }
+        else if (context.performed)
+        {
+            InteractEventPerformed?.Invoke();
+            _interactPerformed = true;
+        }
+        else if(context.canceled)
+        {
+            InteractEventCanceled?.Invoke();
+            _interactPerformed = false;
         }
     }
 }

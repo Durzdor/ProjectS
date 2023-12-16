@@ -71,6 +71,11 @@ public class CameraController : MonoBehaviour
         transform.position = newPosition;
     }
 
+    public void SetFollowObject(GameObject follow)
+    {
+        character = follow.transform;
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;

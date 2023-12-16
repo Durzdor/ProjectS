@@ -1,17 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MiniMap : MonoBehaviour
 {
-    public Transform player;
+    [SerializeField] private Transform _follow;
+
+    private void Awake()
+    {
+        if (_follow == null) _follow = FindObjectOfType<PlayerModel>().transform;
+    }
 
     private void LateUpdate()
     {
-        Vector3 newPosition = player.position;
-        newPosition.y = transform.position.y;
-        transform.position = newPosition;
+        if (_follow == null) return;
+        transform.position = new Vector3(_follow.position.x, _follow.position.y, -22);
+    }
 
-        transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f);
+    public void SetFollow(Transform follow)
+    {
+        _follow = follow;
     }
 }

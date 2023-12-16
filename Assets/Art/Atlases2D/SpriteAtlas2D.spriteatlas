@@ -59,6 +59,7 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 6b91b410ee21c6f46a09abd1b64e9b82, type: 3}
   - {fileID: 21300000, guid: 557767108c01ae340bbd472ef54ab075, type: 3}
   - {fileID: 21300000, guid: c68f0b20449c4be488eb246186f41dd1, type: 3}
   - {fileID: 21300000, guid: 30290e20b48171a43bb23f860e1b6280, type: 3}
@@ -119,6 +120,7 @@ SpriteAtlas:
   - {fileID: -760379758, guid: 307657b1abc230a4394182d1e1565b7e, type: 3}
   - {fileID: -1282321411, guid: 307657b1abc230a4394182d1e1565b7e, type: 3}
   - {fileID: -1813546430, guid: 307657b1abc230a4394182d1e1565b7e, type: 3}
+  - {fileID: 21300000, guid: 20ea35f13b65c9045b218ed15b12266b, type: 3}
   - {fileID: 21300000, guid: 01aa03026a684ee4ab3348a08347cfa7, type: 3}
   - {fileID: 21300000, guid: 665d4e42461cac64f9a0a569bd3ffa4e, type: 3}
   - {fileID: 647004480, guid: f7f31452e43008f4686cf2da93f01ec8, type: 3}
@@ -297,6 +299,7 @@ SpriteAtlas:
   - {fileID: 2032442876, guid: 73e2c6e3465d762429a0971cb7ba2a3d, type: 3}
   - {fileID: 1287117703, guid: 73e2c6e3465d762429a0971cb7ba2a3d, type: 3}
   - {fileID: 21300000, guid: 60e1b0048c128bc49b410f223958d542, type: 3}
+  - {fileID: 21300000, guid: c70ba80462dab014bb2bc60368e278c7, type: 3}
   - {fileID: -511338794, guid: 0afc1ee4cea426841a09f9ac1c90a30d, type: 3}
   - {fileID: -1206673237, guid: 0afc1ee4cea426841a09f9ac1c90a30d, type: 3}
   - {fileID: -703475017, guid: 0afc1ee4cea426841a09f9ac1c90a30d, type: 3}
@@ -358,8 +361,10 @@ SpriteAtlas:
   - {fileID: 1371859396, guid: 477795a5d2cb04a4eb5ec78854d47492, type: 3}
   - {fileID: 1076098908, guid: 477795a5d2cb04a4eb5ec78854d47492, type: 3}
   - {fileID: 21300000, guid: 8c13f8a51b2ca07409281cb247e5004d, type: 3}
+  - {fileID: 21300000, guid: 8d8040b5033b11b4daa2228a1c2df3d9, type: 3}
   - {fileID: 21300000, guid: f0c333b503d6ed54e9f136e4eadcf498, type: 3}
   - {fileID: 21300000, guid: 0160bcf5b41c35744b3d06f46c9e225c, type: 3}
+  - {fileID: 21300000, guid: ce763ef593369044fae54fe37f8717c9, type: 3}
   - {fileID: -1549775085, guid: 6ee3f916bb576e045b3153383d339592, type: 3}
   - {fileID: -344476539, guid: 6ee3f916bb576e045b3153383d339592, type: 3}
   - {fileID: 1320363230, guid: 6ee3f916bb576e045b3153383d339592, type: 3}
@@ -673,6 +678,7 @@ SpriteAtlas:
   - {fileID: 343501625, guid: b14d089e47f5985498b1b199ac3c743c, type: 3}
   - {fileID: 112929224, guid: b14d089e47f5985498b1b199ac3c743c, type: 3}
   - {fileID: 21300000, guid: a9a3bdbe17af40a4b97ce056fcbe0b56, type: 3}
+  - {fileID: 21300000, guid: cd8ba2ce9fff35c41a0838762d139c9a, type: 3}
   - {fileID: 21300000, guid: 032ac2de9e8d2b548b4bc9141bd7df61, type: 3}
   - {fileID: -365790339, guid: 6439254f5d01a1e4f9b8ad298be5ac5a, type: 3}
   - {fileID: 931493978, guid: 6439254f5d01a1e4f9b8ad298be5ac5a, type: 3}
@@ -690,6 +696,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 34ef2fbf0932b18429efdb52a9979163, type: 3}
   - {fileID: 21300000, guid: 144ea4dfc5cb35a45873f8d6dc4cc83e, type: 3}
   m_PackedSpriteNamesToIndex:
+  - IMG2
   - key-shift
   - IconBlackSmith
   - key-N
@@ -750,6 +757,7 @@ SpriteAtlas:
   - walk-up_2
   - walk-up_1
   - walk-up_0
+  - IMG3
   - key-E
   - snow
   - attack_up_side_0
@@ -928,6 +936,7 @@ SpriteAtlas:
   - attack_down_side_0
   - attack_down_side_2
   - key-3
+  - IMG4
   - Puertas y ventanas (1)_7
   - Puertas y ventanas (1)_6
   - Puertas y ventanas (1)_5
@@ -989,8 +998,10 @@ SpriteAtlas:
   - ParedMarronGris_2
   - ParedMarronGris_3
   - key-caps
+  - IMG6
   - key-G
   - Objetos varios
+  - IMG5
   - Objetos_separados_9
   - Objetos_separados_8
   - Objetos_separados_3
@@ -1304,6 +1315,7 @@ SpriteAtlas:
   - ParedMarronRoja_7
   - ParedMarronRoja_6
   - key-i
+  - IMG1
   - key-alt2
   - _side idle_4
   - _side idle_2
