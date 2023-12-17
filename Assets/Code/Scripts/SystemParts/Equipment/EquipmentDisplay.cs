@@ -54,6 +54,7 @@ public class EquipmentDisplay : MonoBehaviour
     private void Awake()
     {
         _equipmentDatabase = GetComponent<EquipmentDatabase>();
+        _currentFilter = 5; //Mainhand filter
     }
 
     public void Show()
@@ -136,8 +137,17 @@ public class EquipmentDisplay : MonoBehaviour
 
     public void DisplayComparedInfo(ItemSO item)
     {
-        comparedIdentifier.text = item.Identifier;
         var stats = (EquipmentStatsSO)item.Stats;
+        // Hardcodeado a que muestre el equipado en el mainhand siempre
+        var slotCheckedItem = _equipmentDatabase.EquippedItems[stats.EquipSlot];
+        if (slotCheckedItem != null)
+        {
+            var button = equippedItemSlots[equippedItemSlots.Count-1].Button;
+                    DisplayEquippedInfo(slotCheckedItem,button);
+        }
+        
+        // cosa fea
+        comparedIdentifier.text = item.Identifier;
         comparedSlot.text = stats.EquipSlot.ToString();
         comparedDescription.text = item.Description;
         comparedStats.text = $"Armor: {stats.Armor} \n Strength: {stats.Strength} \n";

@@ -6,8 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="f7432de4-e531-4b43-8516-926d0e3790db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/PlayerUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/PlayerUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E001_Stats.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E001_Stats.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E001_StoneHammer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E001_StoneHammer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E008_StoneKnife.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E008_StoneKnife.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E009_StoneHammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E009_StoneHammer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E010_StoneSledgeHammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E010_StoneSledgeHammer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E011_Axe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E011_Axe.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E012_Knife.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E012_Knife.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E013_Katana.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E013_Katana.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702395099652</updated>
       <workItem from="1702395102685" duration="16003000" />
-      <workItem from="1702838552760" duration="7425000" />
+      <workItem from="1702838552760" duration="11771000" />
     </task>
     <servers />
   </component>

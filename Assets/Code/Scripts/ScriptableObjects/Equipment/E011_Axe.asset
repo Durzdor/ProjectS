@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Axe
   icon: {fileID: -1660140781, guid: 7e646bddc94b6384b997ce5fe82b5d1b, type: 3}
   itemCategories: 1
-  stats: {fileID: 11400000, guid: a0cb60770da1ed44096adaebd56cabc9, type: 2}
+  stats: {fileID: 11400000, guid: 59352b3b70c53bb4ca88e0611a5dd567, type: 2}
   WeaponPrefab: {fileID: 6624889895145737997, guid: b2826dd8d0e5dc045baf84c60493f2bc, type: 3}
