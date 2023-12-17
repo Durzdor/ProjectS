@@ -5,6 +5,7 @@ public class PlayerUIController : MonoBehaviour
 {
     [SerializeField] private BookAnimations popupMenu;
     [SerializeField] private GameObject menuContent;
+    [SerializeField] private GameObject notBookUI;
     [SerializeField] private List<BookmarksSetOpacity> bookmarksList;
     
     
@@ -43,6 +44,7 @@ public class PlayerUIController : MonoBehaviour
         if (!ena)
         {
             popupMenu.gameObject.SetActive(true);
+            notBookUI.gameObject.SetActive(false);
             popupMenu.FullBookOpen();
         }
         else
@@ -59,6 +61,7 @@ public class PlayerUIController : MonoBehaviour
     private void FullCloseHandler()
     {
         popupMenu.gameObject.SetActive(false);
+        notBookUI.gameObject.SetActive(true);
     }
 
     private void ShowInventory()
