@@ -26,11 +26,13 @@ public class InventoryDisplay : MonoBehaviour
     private int _currentFilter;
     private int _lengthFilter;
     private QuickSlot quickSlot1;
+    private PlayerUIController _playerUIController;
 
     private void Awake()
     {
         _lengthFilter = Enum.GetValues(typeof(ItemCategories)).Length - 1;
         quickSlot1 = GetComponent<QuickSlot>();
+        _playerUIController = GetComponent<PlayerUIController>();
     }
 
     private void GenerateInventoryItem(ItemSO itemSo, int itemAmount)
@@ -135,6 +137,7 @@ public class InventoryDisplay : MonoBehaviour
         quickSlotButton.gameObject.SetActive(false);
         var buttonText = interactionButton.gameObject.GetComponentInChildren<TextMeshProUGUI>();
         var msg = "";
+        interactionButton.onClick.RemoveAllListeners();
         switch (item.ItemCategories)
         {
             case ItemCategories.Consumable:
@@ -142,12 +145,16 @@ public class InventoryDisplay : MonoBehaviour
                 quickSlotButton.gameObject.SetActive(true);
                 quickSlotButton.onClick.RemoveAllListeners();
                 quickSlotButton.onClick.AddListener(delegate { quickSlot1.SaveItem(item); });
+                interactionButton.onClick.AddListener(item.ItemAction);
+                interactionButton.onClick.AddListener(FilterInventory);
                 break;
             case ItemCategories.Equipment:
                 msg = "Equip";
+                interactionButton.onClick.AddListener(SwitchToEquipTab);
                 break;
             case ItemCategories.Material:
                 msg = "Craft";
+                interactionButton.onClick.AddListener(SwitchToCraftTab);
                 break;
             case ItemCategories.All:
             case ItemCategories.Key:
@@ -157,9 +164,9 @@ public class InventoryDisplay : MonoBehaviour
         }
 
         buttonText.text = msg;
-        interactionButton.onClick.RemoveAllListeners();
-        interactionButton.onClick.AddListener(item.ItemAction);
-        interactionButton.onClick.AddListener(FilterInventory);
+        //interactionButton.onClick.RemoveAllListeners();
+        // interactionButton.onClick.AddListener(item.ItemAction);
+        // interactionButton.onClick.AddListener(FilterInventory);
         itemIdentifier.text = item.Identifier;
         itemCategory.text = item.ItemCategories.ToString();
         itemDescription.text = item.Description;
@@ -168,5 +175,14 @@ public class InventoryDisplay : MonoBehaviour
     private void ClearDetails()
     {
         infoContainer.SetActive(false);
+    }
+
+    private void SwitchToEquipTab()
+    {
+        _playerUIController.SetFilter(2);
+    }
+    private void SwitchToCraftTab()
+    {
+        _playerUIController.SetFilter(1);
     }
 }

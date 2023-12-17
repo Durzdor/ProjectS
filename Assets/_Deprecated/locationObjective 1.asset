@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0094d6b53f2ef459e23f31ecad1a8b, type: 3}
   m_Name: locationObjective 1
   m_EditorClassIdentifier: 
-  locationPrefab: {fileID: 4013637661830616754, guid: 90fe4e6484ebb5a4186fc2473bf0fd7d, type: 3}
+  locationPrefab: {fileID: 4013637661830616754, guid: f2747730306da8f43abd8a45dc5d704a, type: 3}

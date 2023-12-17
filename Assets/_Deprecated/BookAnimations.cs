@@ -4,6 +4,7 @@ using UnityEngine;
 public class BookAnimations : MonoBehaviour
 {
     private Animator _animator;
+    public bool IsAnimating { get; private set; }
 
     // Full book open/close
     private static readonly int OpenBook = Animator.StringToHash("OpenBook");
@@ -38,32 +39,45 @@ public class BookAnimations : MonoBehaviour
 
     public void FullBookOpen()
     {
-        _animator.SetTrigger(OpenBook);
-        _animator.ResetTrigger(FlipPage);
-        _animator.ResetTrigger(CloseBook);
+        if (!IsAnimating)
+        {
+            _animator.SetTrigger(OpenBook);
+            IsAnimating = true;
+        }
     }
 
     public void FullBookFlip()
     {
-        _animator.SetTrigger(FlipPage);
-        _animator.ResetTrigger(OpenBook);
-        _animator.ResetTrigger(CloseBook);
+        if (!IsAnimating)
+        {
+            _animator.SetTrigger(FlipPage);
+        }
     }
 
     public void FullBookClose()
     {
-        _animator.SetTrigger(CloseBook);
-        _animator.ResetTrigger(OpenBook);
-        _animator.ResetTrigger(FlipPage);
+        if (!IsAnimating)
+        {
+            _animator.SetTrigger(CloseBook);
+            IsAnimating = true;
+        }
     }
 
     public void FullOpenEvent()
     {
         OnFullOpenComplete?.Invoke();
+        _animator.ResetTrigger(CloseBook);
+        _animator.ResetTrigger(OpenBook);
+        _animator.ResetTrigger(FlipPage);
+        IsAnimating = false;
     }
     
     public void FullCloseEvent()
     {
         OnFullCloseComplete?.Invoke();
+        _animator.ResetTrigger(CloseBook);
+        _animator.ResetTrigger(OpenBook);
+        _animator.ResetTrigger(FlipPage);
+        IsAnimating = false;
     }
 }
