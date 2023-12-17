@@ -1,21 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MissionIconBehaviour : MonoBehaviour
 {
-    public Transform Character;
-    public Transform Mission;
+    private Transform Character;
+    [SerializeField] private Transform Mission;
     private Vector2 _dir;
     private SpriteRenderer _sr;
 
-    void Awake()
+   private void Start()
     {
+        Character = GameManager.Instance.Player.transform;
         _sr = GetComponent<SpriteRenderer>();
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         _dir = (Mission.position - Character.position);

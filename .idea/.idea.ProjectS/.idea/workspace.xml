@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7432de4-e531-4b43-8516-926d0e3790db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Atlases2D/Atlas2DUI.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Atlases2D/Atlas2DUI.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookFlipClose.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookFlipClose.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookFlipOpen.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookFlipOpen.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookCloseAndOut.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookCloseAndOut.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookFlyToOpen.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookFlyToOpen.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookOpen.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookOpen.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookOutOfFrame.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookOutOfFrame.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/PlayerUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/PlayerUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/InventoryDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/InventoryDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/Inventory/ItemButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/Inventory/ItemButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/MiniMapPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/MiniMapPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Scenes/BetaMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Scenes/BetaMap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/AnimatorTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/BookAnimations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/AnimatorTester.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/BookAnimations.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/MissionIconBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/MissionIconBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/Fire Department Location.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/Fire Department Location.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +23,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2ZRq9shkvn2hkWhmIunLBUZL7d0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ahorasilauideverdadcreemeporfa",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,6 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702395099652</updated>
       <workItem from="1702395102685" duration="16003000" />
+      <workItem from="1702838552760" duration="2434000" />
     </task>
     <servers />
   </component>
