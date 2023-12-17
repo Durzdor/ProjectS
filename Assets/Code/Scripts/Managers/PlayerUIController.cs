@@ -1,9 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerUIController : MonoBehaviour
 {
     [SerializeField] private BookAnimations popupMenu;
     [SerializeField] private GameObject menuContent;
+    [SerializeField] private List<BookmarksSetOpacity> bookmarksList;
+    
     
     private InventoryDisplay _playerInventory;
     private CraftDisplay _playerCrafting;
@@ -29,6 +32,7 @@ public class PlayerUIController : MonoBehaviour
             ScreenBg();
             ShowInventory();
             _currentFilter = 0;
+            SetBookmarkOpacity(0);
         }
     }
 
@@ -120,6 +124,7 @@ public class PlayerUIController : MonoBehaviour
     {
         _currentFilter = filter;
         SwitchUi();
+        SetBookmarkOpacity(filter);
     }
 
     private void SwitchUi()
@@ -141,6 +146,21 @@ public class PlayerUIController : MonoBehaviour
             default:
                 ShowInventory();
                 break;
+        }
+    }
+
+    private void SetBookmarkOpacity(int index)
+    {
+        for (int i = 0; i < bookmarksList.Count; i++)
+        {
+            if (i == index)
+            {
+                bookmarksList[i].Lighten();
+            }
+            else
+            {
+                bookmarksList[i].Darken();
+            }
         }
     }
 }
