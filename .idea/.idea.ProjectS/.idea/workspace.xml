@@ -6,27 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f7432de4-e531-4b43-8516-926d0e3790db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Player/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Player/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E011_Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E011_Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E012_Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E012_Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E013_Hammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E013_Hammer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E014_SledgeHammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E014_SledgeHammer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E015_LightSaber.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E015_LightSaber.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E015_Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E015_Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E016_Katana.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E016_Katana.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E016_Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E016_Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Recipes/R001_StoneHammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Recipes/R001_StoneHammer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/InventoryDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/InventoryDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/QuickSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/QuickSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/UI_ItemContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/UI_ItemContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/KillCountObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/KillCountObjective.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/QuestDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/QuestDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/TurnInObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/TurnInObjective.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/Character/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/Character/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/PauseMenu/SettingsDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/PauseMenu/SettingsDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/QuestManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Scenes/BetaMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Scenes/BetaMap.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" afterDir="false" />
     </list>
@@ -42,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/PauseMenu/SettingsDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/UI_QuestPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Deprecated/BookmarksSetOpacity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Deprecated/Wintrigger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -121,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702395099652</updated>
       <workItem from="1702395102685" duration="16003000" />
-      <workItem from="1702838552760" duration="29812000" />
+      <workItem from="1702838552760" duration="33571000" />
     </task>
     <servers />
   </component>
