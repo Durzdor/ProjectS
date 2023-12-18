@@ -10,6 +10,6 @@ public class CarView : MonoBehaviour
 
     private void Update()
     {
-        _trails.ForEach(trail => trail.gameObject.SetActive(_carModel.IsAccelerating && _carModel.IsRotating));
+        _trails.ForEach(trail => trail.emitting = (_carModel.IsAccelerating && _carModel.IsRotating));
     }
 }

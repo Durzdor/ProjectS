@@ -39,15 +39,16 @@ public class CarModel : NPCModel
     {
         _rb.velocity = Vector2.ClampMagnitude(_rb.velocity, _maxSpeed);
         _acceleration = _rb.velocity;
-
-        _isAccelerating = false;
-        _isRotating = false;
     }
 
     public void ApplyTraction(float traction)
     {
         if (!_isDriving) return;
-        if (traction == 0) return;
+        if (traction == 0)
+        {
+            _isAccelerating = false;
+            return;
+        }
 
         _isAccelerating = true;
         
@@ -58,7 +59,11 @@ public class CarModel : NPCModel
     public void ApplyRotation(float rotation)
     {
         if (!_isDriving) return;
-        if (rotation == 0) return;
+        if (rotation == 0)
+        {
+            _isRotating = false;
+            return;
+        }
 
         _isRotating = true;
         

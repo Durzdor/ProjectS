@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7432de4-e531-4b43-8516-926d0e3790db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Atlases2D/Atlas2DUI.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Atlases2D/Atlas2DUI.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookFlipClose.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookFlipClose.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookFlipOpen.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/BookFlipOpen.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookCloseAndOut.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookCloseAndOut.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookFlyToOpen.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookFlyToOpen.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookOpen.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookOpen.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookOutOfFrame.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Animation/UI/NotebookOutOfFrame.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/PlayerUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/PlayerUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/InventoryDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/InventoryDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/Inventory/ItemButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/Inventory/ItemButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/MiniMapPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/MiniMapPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Scenes/BetaMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Scenes/BetaMap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/AnimatorTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/BookAnimations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/AnimatorTester.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/BookAnimations.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Car/CarModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Car/CarModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Car/CarView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Car/CarView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/Character/Car.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/Character/Car.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,37 +24,38 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2ZRq9shkvn2hkWhmIunLBUZL7d0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ahorasilauideverdadcreemeporfa",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/car&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\DurzPC\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\DurzPC\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\DurzPC\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Jal\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Jal\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Jal\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\Programas\Unity\2021.3.20f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Program Files\UnityHUB\Editor\2021.3.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\Unity Projects\Tesis\ProjectS&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity Projects\Tesis\ProjectS" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -76,7 +63,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\Programas\Unity\2021.3.20f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Program Files\UnityHUB\Editor\2021.3.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\Unity Projects\Tesis\ProjectS&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\Unity Projects\Tesis\ProjectS" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -113,6 +100,8 @@
       <option name="presentableId" value="Default" />
       <updated>1702395099652</updated>
       <workItem from="1702395102685" duration="16003000" />
+      <workItem from="1702740143295" duration="1398000" />
+      <workItem from="1702846881717" duration="1961000" />
     </task>
     <servers />
   </component>
