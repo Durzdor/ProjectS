@@ -17,5 +17,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 79b3b5f3e35a4d340bedb8d7577b9f0f, type: 2}
   - {fileID: 11400000, guid: b39ccc82cc92e514390a2cdb75cfcda9, type: 2}
   - {fileID: 11400000, guid: 8f2bdb35fec2fd04eb82837a253cee77, type: 2}
-  questState: 0
+  questState: 3
   questReward: {fileID: 0}

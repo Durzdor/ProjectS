@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     {
         MakeSingleton();
         LoadComponents();
+        QuestManager.ResetAllQuests();
     }
 
     private void Start()

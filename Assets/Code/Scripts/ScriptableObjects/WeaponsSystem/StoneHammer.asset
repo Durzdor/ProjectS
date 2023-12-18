@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: StoneHammer
   m_EditorClassIdentifier: 
   _damage: 20
-  _angle: 60
   _attackSpeed: 250
-  _knockback: 1.2
+  _knockback: 1.8
+  _angle: 60

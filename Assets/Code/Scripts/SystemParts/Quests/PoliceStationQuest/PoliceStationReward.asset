@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0094d6b53f2ef459e23f31ecad1a8b, type: 3}
-  m_Name: locationObjective 1
+  m_Script: {fileID: 11500000, guid: 3a6504aab26352045a763156b7d58a5b, type: 3}
+  m_Name: PoliceStationReward
   m_EditorClassIdentifier: 
-  locationPrefab: {fileID: 4013637661830616754, guid: f2747730306da8f43abd8a45dc5d704a, type: 3}
+  itemReward:
+  - {fileID: 11400000, guid: 1e43a5c8671de8846b1040208c06ffcd, type: 2}
+  rewardQuantity: 01000000

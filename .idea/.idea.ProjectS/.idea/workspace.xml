@@ -29,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/UI_QuestPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InitMission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Deprecated/BookmarksSetOpacity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Deprecated/Wintrigger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -108,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702395099652</updated>
       <workItem from="1702395102685" duration="16003000" />
-      <workItem from="1702838552760" duration="29812000" />
+      <workItem from="1702838552760" duration="33571000" />
     </task>
     <servers />
   </component>

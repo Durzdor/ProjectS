@@ -3,6 +3,7 @@ using UnityEngine;
 public class SettingsDisplay : MonoBehaviour
 {
     [SerializeField] private GameObject popupMenu;
+    [SerializeField] private GameObject controlsInfo;
     
     
     public void Show()
@@ -14,5 +15,11 @@ public class SettingsDisplay : MonoBehaviour
     public void Hide()
     {
         popupMenu.SetActive(false);
+    }
+
+    public void DisplayControls()
+    {
+        var ena = controlsInfo.activeInHierarchy;
+        controlsInfo.SetActive(!ena);
     }
 }

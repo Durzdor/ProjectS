@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa0094d6b53f2ef459e23f31ecad1a8b, type: 3}
-  m_Name: locationObjective
+  m_Name: location_FireStation
   m_EditorClassIdentifier: 
   locationPrefab: {fileID: 4013637661830616754, guid: 90fe4e6484ebb5a4186fc2473bf0fd7d, type: 3}

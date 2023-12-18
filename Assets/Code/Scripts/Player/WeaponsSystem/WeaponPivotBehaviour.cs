@@ -28,7 +28,7 @@ public abstract class WeaponPivotBehaviour : MonoBehaviour
         LookDir = (Input.MousePosition - (Vector2)Character.transform.position).normalized;
         //float angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg;
         //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.localPosition = LookDir * 0.06f;
+        transform.localPosition = LookDir * 0.08f;
         transform.right = -LookDir;
     }
 

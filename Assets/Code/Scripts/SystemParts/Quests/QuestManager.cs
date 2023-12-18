@@ -80,4 +80,15 @@ public class QuestManager : MonoBehaviour
             }
         }
     }
+
+    public bool IsQuestComplete(Quest quest)
+    {
+        return CompletedQuests.Contains(quest);
+    }
+
+    public void ResetAllQuests()
+    {
+        foreach (var item in questDatabase)
+            item.ChangeState(QuestState.NotActive);
+    }
 }

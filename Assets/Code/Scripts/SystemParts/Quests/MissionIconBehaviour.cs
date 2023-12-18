@@ -17,6 +17,6 @@ public class MissionIconBehaviour : MonoBehaviour
     {
         _dir = (Mission.position - Character.position);
         _sr.enabled = _dir.magnitude < 10 ? false : true;
-        transform.position = Character.position + (Vector3)_dir.normalized * 10;
+        transform.position = Character.position + (Vector3)_dir.normalized * 9;
     }
 }

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 858b3cdf1eb938542b6c9264aae66e92, type: 3}
-  m_Name: locationQuest 1
+  m_Name: locationQuest_PoliceStation
   m_EditorClassIdentifier: 
-  questName: Find the Fire Department
+  questName: Find the Police Station
   questObjectives:
-  - {fileID: 11400000, guid: 636abcf6beed2c04da1583be181922be, type: 2}
+  - {fileID: 11400000, guid: 9d24c972577baaf41b41b80ec6b0e233, type: 2}
   questState: 0
   questReward: {fileID: 11400000, guid: 0dcd78f14e492584a9e5f9961987f5f9, type: 2}
