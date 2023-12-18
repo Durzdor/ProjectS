@@ -30,4 +30,9 @@ public class KillCountObjective : QuestObjective
         base.Setup();
         _startingCount = GameManager.Instance.KillCountManager.KillCountTracker[typeToKill];
     }
+
+    public override string QuestRequirementString()
+    {
+        return $"Eliminate {_lastCheck}/{amountToKill} {typeToKill} enemy";
+    }
 }

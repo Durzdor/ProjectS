@@ -12,6 +12,8 @@ public class PlayerUIController : MonoBehaviour
     private InventoryDisplay _playerInventory;
     private CraftDisplay _playerCrafting;
     private EquipmentDisplay _playerEquipment;
+    private QuestDisplay _playerQuests;
+    private SettingsDisplay _playerSettings;
 
     private int _currentFilter;
     private int _lengthFilter = 2; // 0=Inventory 1=Crafting 2=Equipment 3=Quests 4=Menu
@@ -21,6 +23,8 @@ public class PlayerUIController : MonoBehaviour
         _playerInventory = GetComponent<InventoryDisplay>();
         _playerCrafting = GetComponent<CraftDisplay>();
         _playerEquipment = GetComponent<EquipmentDisplay>();
+        _playerQuests = GetComponent<QuestDisplay>();
+        _playerSettings = GetComponent<SettingsDisplay>();
         popupMenu.OnFullOpenComplete += FullOpenHandler;
         popupMenu.OnFullCloseComplete += FullCloseHandler;
     }
@@ -69,6 +73,8 @@ public class PlayerUIController : MonoBehaviour
         _playerInventory.Show();
         _playerCrafting.Hide();
         _playerEquipment.Hide();
+        _playerQuests.Hide();
+        _playerSettings.Hide();
     }
 
     private void ShowCrafting()
@@ -76,6 +82,8 @@ public class PlayerUIController : MonoBehaviour
         _playerInventory.Hide();
         _playerCrafting.Show();
         _playerEquipment.Hide();
+        _playerQuests.Hide();
+        _playerSettings.Hide();
     }
 
     private void ShowEquipment()
@@ -83,6 +91,8 @@ public class PlayerUIController : MonoBehaviour
         _playerInventory.Hide();
         _playerCrafting.Hide();
         _playerEquipment.Show();
+        _playerQuests.Hide();
+        _playerSettings.Hide();
     }
     
     private void ShowQuestLog()
@@ -90,6 +100,8 @@ public class PlayerUIController : MonoBehaviour
         _playerInventory.Hide();
         _playerCrafting.Hide();
         _playerEquipment.Hide();
+        _playerQuests.Show();
+        _playerSettings.Hide();
     }
     
     private void ShowSettings()
@@ -97,6 +109,8 @@ public class PlayerUIController : MonoBehaviour
         _playerInventory.Hide();
         _playerCrafting.Hide();
         _playerEquipment.Hide();
+        _playerQuests.Hide();
+        _playerSettings.Show();
     }
 
     [ContextMenu("NextFilter")]
@@ -145,7 +159,15 @@ public class PlayerUIController : MonoBehaviour
             case 2:
                 ShowEquipment();
                 break;
-
+            
+            case 3:
+                ShowQuestLog();
+                break;
+            
+            case 4:
+                ShowSettings();
+                break;
+            
             default:
                 ShowInventory();
                 break;

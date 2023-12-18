@@ -35,4 +35,9 @@ public class TurnInObjective : QuestObjective
     {
         base.Setup();
     }
+
+    public override string QuestRequirementString()
+    {
+        return $"Get {CurrItemAmount}/{itemQuantity} {itemRequired.Identifier}";
+    }
 }

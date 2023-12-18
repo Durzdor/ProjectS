@@ -120,14 +120,14 @@ public class CraftDisplay : MonoBehaviour
 
             // Otorgarle el item deseado
             GameManager.Instance.PlayerInventory.AddItemSO(recipe.ItemResult, recipe.ItemResultQuantity);
-            var msgGood = $"Se crafteo {recipe.ItemResult.Identifier} x{recipe.ItemResultQuantity}";
+            var msgGood = $"Crafted {recipe.ItemResult.Identifier} x{recipe.ItemResultQuantity}";
             GameManager.Instance.PopupManager.ShowMessage(msgGood);
             Debug.LogWarning(msgGood);
         }
         else
         {
             // Avisar que el craft fallo
-            var msgBad = "Faltan materiales";
+            var msgBad = "Missing Materials";
             GameManager.Instance.PopupManager.ShowMessage(msgBad);
             Debug.LogWarning(msgBad);
         }

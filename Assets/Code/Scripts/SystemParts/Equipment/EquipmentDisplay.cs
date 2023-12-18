@@ -106,7 +106,7 @@ public class EquipmentDisplay : MonoBehaviour
         var stats = (EquipmentStatsSO)item.Stats;
         equippedSlot.text = stats.EquipSlot.ToString();
         equippedDescription.text = item.Description;
-        equippedStats.text = $"Armor: {stats.Armor} \n Strength: {stats.Strength} \n";
+        equippedStats.text = $"Strength: {stats.Strength} \n";
         equippedUnequipButton.onClick.RemoveAllListeners();
         equippedUnequipButton.onClick.AddListener(delegate { UnequipDelegate(stats.EquipSlot, buttonRefe); });
     }
@@ -150,7 +150,7 @@ public class EquipmentDisplay : MonoBehaviour
         comparedIdentifier.text = item.Identifier;
         comparedSlot.text = stats.EquipSlot.ToString();
         comparedDescription.text = item.Description;
-        comparedStats.text = $"Armor: {stats.Armor} \n Strength: {stats.Strength} \n";
+        comparedStats.text = $"Strength: {stats.Strength} \n";
         comparedEquipButton.onClick.RemoveAllListeners();
         comparedEquipButton.onClick.AddListener(delegate { EquipDelegate(item); });
     }

@@ -31,4 +31,9 @@ public class LocationObjective : QuestObjective
         _prefabSpawned = Instantiate(locationObj, locationObj.transform.position, quaternion.identity);
         _prefabData = _prefabSpawned.GetComponent<QuestLocationData>();
     }
+
+    public override string QuestRequirementString()
+    {
+        return "Find the location marked on the map";
+    }
 }

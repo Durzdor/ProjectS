@@ -26,4 +26,9 @@ public class QuestObjective : ScriptableObject
     public virtual void Setup()
     {
     }
+
+    public virtual string QuestRequirementString()
+    {
+        return default;
+    }
 }
