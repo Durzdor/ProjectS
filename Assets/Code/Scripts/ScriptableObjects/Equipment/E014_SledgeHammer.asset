@@ -17,5 +17,5 @@ MonoBehaviour:
   description: SledgeHammer
   icon: {fileID: 1431864497, guid: 7e646bddc94b6384b997ce5fe82b5d1b, type: 3}
   itemCategories: 1
-  stats: {fileID: 11400000, guid: a0cb60770da1ed44096adaebd56cabc9, type: 2}
+  stats: {fileID: 11400000, guid: e5cb5816c0c4fe44cb3d44a22b62fd4f, type: 2}
   WeaponPrefab: {fileID: 1825341275065192089, guid: 7f2bd274986422a4596dcc09400541d7, type: 3}

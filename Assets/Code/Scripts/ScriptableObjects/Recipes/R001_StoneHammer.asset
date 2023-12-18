@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ac5437c0d15ce04192da79dc1fd85a8, type: 3}
   m_Name: R001_StoneHammer
   m_EditorClassIdentifier: 
-  itemResult: {fileID: 11400000, guid: 1a2daaa3ac14d95408ce0ae7cbed589f, type: 2}
+  itemResult: {fileID: 11400000, guid: 37bfa6b941ccc114eb23a535da11bffc, type: 2}
   itemResultQuantity: 1
   itemsRequired:
   - {fileID: 11400000, guid: 92e3f518f67bde14289098b9b0bb7a26, type: 2}

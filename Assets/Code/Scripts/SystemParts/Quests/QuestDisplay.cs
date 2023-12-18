@@ -41,6 +41,7 @@ public class QuestDisplay : MonoBehaviour
 
     public void Hide()
     {
+        ClearDetails();
         popupMenu.SetActive(false);
     }
 

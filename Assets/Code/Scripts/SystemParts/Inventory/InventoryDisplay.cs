@@ -134,6 +134,7 @@ public class InventoryDisplay : MonoBehaviour
     private void ShowDetails(ItemSO item)
     {
         infoContainer.SetActive(true);
+        interactionButton.gameObject.SetActive(true);
         quickSlotButton.gameObject.SetActive(false);
         var buttonText = interactionButton.gameObject.GetComponentInChildren<TextMeshProUGUI>();
         var msg = "";
@@ -158,6 +159,8 @@ public class InventoryDisplay : MonoBehaviour
                 break;
             case ItemCategories.All:
             case ItemCategories.Key:
+                interactionButton.gameObject.SetActive(false);
+                break;
             default:
                 msg = "TBD";
                 break;

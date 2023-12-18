@@ -57,6 +57,7 @@ public class PlayerModel : MonoBehaviour, IKnockable, IDamageable
         Health.OnGained += OnGainedHandler;
         Health.OnDeath += OnDeathHandler;
         _currSpeed = baseSpeed;
+        GameManager.Instance.PlayerSetup(this);
     }
 
     private void Start()

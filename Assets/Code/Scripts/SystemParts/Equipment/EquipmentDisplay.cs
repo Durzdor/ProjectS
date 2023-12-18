@@ -1,3 +1,4 @@
+using System;
 using Character;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,7 @@ using UnityEngine.UI;
 public class EquipmentDisplay : MonoBehaviour
 {
     #region Serializables
-
-    [SerializeField] private PlayerController _playerController;
+    
     [SerializeField] private GameObject popupMenu;
     [SerializeField] private List<UI_EquipSlotContainer> equippedItemSlots;
 
@@ -48,6 +48,7 @@ public class EquipmentDisplay : MonoBehaviour
     private int _currentFilter;
     private int _lengthFilter;
     private EquipmentDatabase _equipmentDatabase;
+    private PlayerController _playerController;
     
     #endregion
 
@@ -56,7 +57,7 @@ public class EquipmentDisplay : MonoBehaviour
         _equipmentDatabase = GetComponent<EquipmentDatabase>();
         _currentFilter = 5; //Mainhand filter
     }
-
+    
     public void Show()
     {
         _lengthFilter = _equipmentDatabase.EquippedItems.Count - 1;
@@ -130,6 +131,7 @@ public class EquipmentDisplay : MonoBehaviour
 
     private void EquipDelegate(ItemSO item)
     {
+        _playerController = GameManager.Instance.Player.gameObject.GetComponent<PlayerController>();
         _equipmentDatabase.PutEquipmentOn(item);
         if (((EquipmentStatsSO)item.Stats).EquipSlot == EquipmentSlots.MainHand) _playerController.EquipWeapon(((EquipmentWeapon)item).WeaponPrefab);
         UpdateEquipmentUI();

@@ -9,6 +9,11 @@ public class KillCountObjective : QuestObjective
     private int _startingCount;
     private int _lastCheck;
 
+    private int LastCheck()
+    {
+        return GameManager.Instance.KillCountManager.KillCountTracker[typeToKill] - _startingCount;
+    }
+    
     public override bool CheckProgress()
     {
         _lastCheck = GameManager.Instance.KillCountManager.KillCountTracker[typeToKill] - _startingCount;
@@ -33,6 +38,6 @@ public class KillCountObjective : QuestObjective
 
     public override string QuestRequirementString()
     {
-        return $"Eliminate {_lastCheck}/{amountToKill} {typeToKill} enemy";
+        return $"Eliminate {LastCheck()}/{amountToKill} {typeToKill} enemy";
     }
 }
