@@ -7,6 +7,9 @@ public class CarController : MonoBehaviour
     [SerializeField] private InputController _inputController;
     [SerializeField] private float _knockForce = 5f;
     [SerializeField] private float _damage = 5f;
+    [SerializeField] private GameObject _lights;
+    [SerializeField] private GameObject _frontLights;
+    [SerializeField] private GameObject _backLights;
     
     private CharacterControl _input;
     private CarModel _carModel;
@@ -23,30 +26,39 @@ public class CarController : MonoBehaviour
     {
         var traction = _inputController.Movement.y;
         var rotation = _inputController.Movement.x;
-        
+
+        //Enciende las luces dependiendo si va adelante o en reversa
+        if (traction > 0)
+            TurnOnFrontLights();
+        if (traction < 0)
+            TurnOnBackLights();
+
         _carModel.ApplyTraction(traction);
         _carModel.ApplyRotation(rotation);
     }
 
     private void InteractCar()
     {
+        //if (!_carModel.HasKey() && _playerOnProximity)
+        //{
+        //    GameManager.Instance.PopupManager.ShowMessage(
+        //        $"You need a {_carModel.Stats.Key.Identifier} to drive this");
+        //    return;
+        //}
 
-        Debug.Log($"Have car key: {_carModel.HasKey()}");
-        
-        if (!_carModel.HasKey())
-        {
-            GameManager.Instance.PopupManager.ShowMessage(
-                $"You need a {_carModel.Stats.Key.Identifier} to drive this");
-            return;
-        }
-        
-        Debug.Log($"_playerOnProximity: {_playerOnProximity} and _carModel.IsDriving: {_carModel.IsDriving}");
-        
-        if(_carModel.IsDriving)
+        if (_carModel.IsDriving)
+        { 
             _carModel.CharacterExitCar();
-        
+            TurnOnFrontLights();
+            _lights.SetActive(false);
+        }
+
         if (_playerOnProximity && !_carModel.IsDriving)
+        { 
             _carModel.CharacterEnterCar();
+            TurnOnFrontLights();
+            _lights.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -82,4 +94,16 @@ public class CarController : MonoBehaviour
         var damage = other.gameObject.GetComponent<IDamageable>();
         if (damage != null) damage.Damage(_damage);
     }
+
+    private void TurnOnFrontLights() 
+    {
+        _frontLights.SetActive(true);
+        _backLights.SetActive(false);
+    }
+    private void TurnOnBackLights() 
+    {
+        _frontLights.SetActive(false);
+        _backLights.SetActive(true);
+    }
+
 }

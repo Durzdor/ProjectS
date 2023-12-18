@@ -22,12 +22,13 @@ public class QuestLocationData : MonoBehaviour
         // if (IsLocationReached) return;
         if (other.CompareTag("PlayerDetection"))
         {
-            print("Location Reached");
             IsLocationReached = true;
-            // Pseudo forma 1 de desactivar subsecuentes activaciones?????
-            _circleCollider2D.radius = 0;
-            // Pseudo forma 2
-            _circleCollider2D.enabled = false;
+            GameManager.Instance.PopupManager.ShowMessage("Location reached!");
+            gameObject.SetActive(false);
+            //// Pseudo forma 1 de desactivar subsecuentes activaciones?????
+            //_circleCollider2D.radius = 0;
+            //// Pseudo forma 2
+            //_circleCollider2D.enabled = false;
         }
     }
 }

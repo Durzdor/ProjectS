@@ -70,3 +70,6 @@ TagManager:
   - name: NPCS
     uniqueID: 3855355001
     locked: 0
+  - name: Minimap
+    uniqueID: 3942286133
+    locked: 0

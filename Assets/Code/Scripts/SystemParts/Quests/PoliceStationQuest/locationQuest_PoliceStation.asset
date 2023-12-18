@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questName: Find the Police Station
   questObjectives:
-  - {fileID: 11400000, guid: 9d24c972577baaf41b41b80ec6b0e233, type: 2}
-  questState: 0
-  questReward: {fileID: 11400000, guid: 0dcd78f14e492584a9e5f9961987f5f9, type: 2}
+  - {fileID: 11400000, guid: 636abcf6beed2c04da1583be181922be, type: 2}
+  questState: 1
+  questReward: {fileID: 11400000, guid: 3518b61c057f3e448a0a9d095f3b4b3c, type: 2}
