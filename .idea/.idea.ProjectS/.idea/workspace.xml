@@ -6,29 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f7432de4-e531-4b43-8516-926d0e3790db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Managers/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Player/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Player/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E011_Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E011_Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E012_Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E012_Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E013_Hammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E013_Hammer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E014_SledgeHammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E014_SledgeHammer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E015_LightSaber.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E015_LightSaber.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E015_Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E015_Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E016_Katana.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E016_Katana.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E016_Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Equipment/E016_Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Recipes/R001_StoneHammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/ScriptableObjects/Recipes/R001_StoneHammer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Equipment/EquipmentDisplay.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/InventoryDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/InventoryDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/QuickSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/QuickSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/UI_ItemContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Inventory/UI_ItemContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/KillCountObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/KillCountObjective.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/QuestDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/QuestDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/TurnInObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/TurnInObjective.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Atlases2D/SpriteAtlas2D.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Atlases2D/SpriteAtlas2D.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Graphics/Textures/RedCar/AutoRojo_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Graphics/Textures/RedCar/AutoRojo_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Car/CarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Car/CarController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Car/CarModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Car/CarModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/Character/Car.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/Character/Car.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/Character/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/Character/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Prefabs/LEVEL------------.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Prefabs/LEVEL------------.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Scenes/BetaMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Scenes/BetaMap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/GmDialog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Deprecated/BookAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Deprecated/BookAnimations.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +27,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/PauseMenu/SettingsDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/SystemParts/Quests/UI_QuestPrefab.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/InitMission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Deprecated/BookmarksSetOpacity.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -54,26 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "feat/car",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\DurzPC\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\DurzPC\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\DurzPC\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Jal\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Jal\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Jal\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Program Files\UnityHUB\Editor\2021.3.20f1\Editor\Unity.exe" />

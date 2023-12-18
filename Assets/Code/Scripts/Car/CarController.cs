@@ -30,6 +30,17 @@ public class CarController : MonoBehaviour
 
     private void InteractCar()
     {
+
+        Debug.Log($"Have car key: {_carModel.HasKey()}");
+        
+        if (!_carModel.HasKey())
+        {
+            GameManager.Instance.PopupManager.ShowMessage(
+                $"You need a {_carModel.Stats.Key.Identifier} to drive this");
+            return;
+        }
+        
+        Debug.Log($"_playerOnProximity: {_playerOnProximity} and _carModel.IsDriving: {_carModel.IsDriving}");
         
         if(_carModel.IsDriving)
             _carModel.CharacterExitCar();

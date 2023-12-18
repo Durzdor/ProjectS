@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BookAnimations : MonoBehaviour
 {
-    private Animator _animator;
+    [SerializeField] private Animator _animator;
     public bool IsAnimating { get; private set; }
 
     // Full book open/close

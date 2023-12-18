@@ -19,13 +19,16 @@ public class CarModel : NPCModel
     [SerializeField] private PlayerModel _player;
     [SerializeField] private CameraController _camera;
     [SerializeField] private MiniMap _miniMapCamera;
+    [SerializeField] private Car_Stats stats;
     
     [SerializeField] private List<Transform> _doors;
     [SerializeField] private LayerMask _obstacleLayer; 
-
+    
+    
     public bool IsDriving => _isDriving;
     public bool IsAccelerating => _isAccelerating;
     public bool IsRotating => _isRotating;
+    public Car_Stats Stats => stats;
     private Rigidbody2D _rb;
     
     private void Awake()
@@ -74,14 +77,6 @@ public class CarModel : NPCModel
     {
         _player = player;
     }
-    
-    public override void Interaction()
-    {
-        if (_player == null) return;
-
-        if (!_isDriving)
-            CharacterEnterCar();
-    }
 
     public void CharacterExitCar()
     {
@@ -112,5 +107,10 @@ public class CarModel : NPCModel
         _miniMapCamera.SetFollow(transform);
         _rb.mass = 1;
         _isDriving = true;
+    }
+    
+    public bool HasKey()
+    {
+        return GameManager.Instance.PlayerInventory.CheckItemSO(stats.Key, 1);
     }
 }

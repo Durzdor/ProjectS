@@ -531,6 +531,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: dfd968fb3a8f99441adbb9217f63ec68, type: 3}
   - {fileID: 21300000, guid: 664a160c039b08a4e93d23b47c9e0bc9, type: 3}
   - {fileID: 21300000, guid: 802cdc1cfef762842a7a1570db6917c6, type: 3}
+  - {fileID: 21300000, guid: ffe3454c751205b489fe10c23465eac7, type: 3}
   - {fileID: 21300000, guid: 2c356f4cc2c8c9b40ad48e4e7473a541, type: 3}
   - {fileID: -2038585310, guid: a001178c224a6dd4ebc1185d497556e1, type: 3}
   - {fileID: -1516511208, guid: a001178c224a6dd4ebc1185d497556e1, type: 3}
@@ -1168,6 +1169,7 @@ SpriteAtlas:
   - key-4
   - key-K
   - key-J
+  - CarIcon
   - rmb2
   - walk-side-mirror_5
   - walk-side-mirror_4
