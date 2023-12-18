@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
         PlayerInventory = GetComponent<PlayerInventory>();
         PopupManager = GetComponent<PopupMessageManager>();
         GameStateManager = GetComponent<GameStateManager>();
-        Player = FindObjectOfType<PlayerModel>();
+        //Player = FindObjectOfType<PlayerModel>();
         PlayerHealthBar = GetComponent<PlayerHealthBar>();
         QuestManager = GetComponent<QuestManager>();
         KillCountManager = GetComponent<KillCountManager>();
@@ -64,13 +64,20 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        //_GOPanel.SetActive(true);
+        //_GOPanel.SetActive(true)
         SceneManager.LoadScene("GameOver");
+        Destroy(gameObject);
     }
 
     public void GameWin()
     {
         //_winPanel.SetActive(true);
         SceneManager.LoadScene("WinScene");
+        Destroy(gameObject);
+    }
+
+    public void PlayerSetup(PlayerModel pModel)
+    {
+        Player = pModel;
     }
 }

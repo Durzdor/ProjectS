@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Metal Hammer
   icon: {fileID: -599221919, guid: 7e646bddc94b6384b997ce5fe82b5d1b, type: 3}
   itemCategories: 1
-  stats: {fileID: 11400000, guid: a0cb60770da1ed44096adaebd56cabc9, type: 2}
+  stats: {fileID: 11400000, guid: 04ebedf353db50b45b6b45a069c39c83, type: 2}
   WeaponPrefab: {fileID: 3339327424010075514, guid: d4ae4fa7f52a94544b4f5ede910049e9, type: 3}

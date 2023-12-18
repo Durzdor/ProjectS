@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Stone SledgeHammer
   icon: {fileID: -996657852, guid: 4ae260b9ab72a404897e31294732d1f3, type: 3}
   itemCategories: 1
-  stats: {fileID: 11400000, guid: a0cb60770da1ed44096adaebd56cabc9, type: 2}
+  stats: {fileID: 11400000, guid: c0a9e563b718b124d873b698a1d06148, type: 2}
   WeaponPrefab: {fileID: 1825341275065192089, guid: 4d5201e38e66ed54cb020c7123d80fb1, type: 3}

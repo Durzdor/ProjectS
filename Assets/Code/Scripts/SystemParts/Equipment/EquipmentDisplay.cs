@@ -1,3 +1,4 @@
+using System;
 using Character;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,7 @@ using UnityEngine.UI;
 public class EquipmentDisplay : MonoBehaviour
 {
     #region Serializables
-
-    [SerializeField] private PlayerController _playerController;
+    
     [SerializeField] private GameObject popupMenu;
     [SerializeField] private List<UI_EquipSlotContainer> equippedItemSlots;
 
@@ -48,14 +48,16 @@ public class EquipmentDisplay : MonoBehaviour
     private int _currentFilter;
     private int _lengthFilter;
     private EquipmentDatabase _equipmentDatabase;
+    private PlayerController _playerController;
     
     #endregion
 
     private void Awake()
     {
         _equipmentDatabase = GetComponent<EquipmentDatabase>();
+        _currentFilter = 5; //Mainhand filter
     }
-
+    
     public void Show()
     {
         _lengthFilter = _equipmentDatabase.EquippedItems.Count - 1;
@@ -105,7 +107,7 @@ public class EquipmentDisplay : MonoBehaviour
         var stats = (EquipmentStatsSO)item.Stats;
         equippedSlot.text = stats.EquipSlot.ToString();
         equippedDescription.text = item.Description;
-        equippedStats.text = $"Armor: {stats.Armor} \n Strength: {stats.Strength} \n";
+        equippedStats.text = $"Strength: {stats.Strength} \n";
         equippedUnequipButton.onClick.RemoveAllListeners();
         equippedUnequipButton.onClick.AddListener(delegate { UnequipDelegate(stats.EquipSlot, buttonRefe); });
     }
@@ -129,6 +131,7 @@ public class EquipmentDisplay : MonoBehaviour
 
     private void EquipDelegate(ItemSO item)
     {
+        _playerController = GameManager.Instance.Player.gameObject.GetComponent<PlayerController>();
         _equipmentDatabase.PutEquipmentOn(item);
         if (((EquipmentStatsSO)item.Stats).EquipSlot == EquipmentSlots.MainHand) _playerController.EquipWeapon(((EquipmentWeapon)item).WeaponPrefab);
         UpdateEquipmentUI();
@@ -136,11 +139,20 @@ public class EquipmentDisplay : MonoBehaviour
 
     public void DisplayComparedInfo(ItemSO item)
     {
-        comparedIdentifier.text = item.Identifier;
         var stats = (EquipmentStatsSO)item.Stats;
+        // Hardcodeado a que muestre el equipado en el mainhand siempre
+        var slotCheckedItem = _equipmentDatabase.EquippedItems[stats.EquipSlot];
+        if (slotCheckedItem != null)
+        {
+            var button = equippedItemSlots[equippedItemSlots.Count-1].Button;
+                    DisplayEquippedInfo(slotCheckedItem,button);
+        }
+        
+        // cosa fea
+        comparedIdentifier.text = item.Identifier;
         comparedSlot.text = stats.EquipSlot.ToString();
         comparedDescription.text = item.Description;
-        comparedStats.text = $"Armor: {stats.Armor} \n Strength: {stats.Strength} \n";
+        comparedStats.text = $"Strength: {stats.Strength} \n";
         comparedEquipButton.onClick.RemoveAllListeners();
         comparedEquipButton.onClick.AddListener(delegate { EquipDelegate(item); });
     }

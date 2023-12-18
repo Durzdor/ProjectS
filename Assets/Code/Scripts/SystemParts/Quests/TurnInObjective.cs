@@ -7,7 +7,11 @@ public class TurnInObjective : QuestObjective
     [SerializeField] private ItemSO itemRequired;
     [SerializeField] private int itemQuantity;
 
-    public int CurrItemAmount { get; set; }
+    public int CurrItemAmount
+    {
+        get => GameManager.Instance.PlayerInventory.CheckItemSO(itemRequired);
+        set => CurrItemAmount = value;
+    }
 
     private void Awake()
     {
@@ -16,7 +20,7 @@ public class TurnInObjective : QuestObjective
 
     public override bool CheckProgress()
     {
-        CurrItemAmount = GameManager.Instance.PlayerInventory.CheckItemSO(itemRequired);
+        // CurrItemAmount = GameManager.Instance.PlayerInventory.CheckItemSO(itemRequired);
         return GameManager.Instance.PlayerInventory.CheckItemSO(itemRequired, itemQuantity);
     }
 
@@ -34,5 +38,10 @@ public class TurnInObjective : QuestObjective
     public override void Setup()
     {
         base.Setup();
+    }
+
+    public override string QuestRequirementString()
+    {
+        return $"Get {CurrItemAmount}/{itemQuantity} {itemRequired.Identifier}";
     }
 }

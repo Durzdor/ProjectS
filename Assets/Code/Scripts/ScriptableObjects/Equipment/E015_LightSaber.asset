@@ -17,5 +17,5 @@ MonoBehaviour:
   description: Lightsaber
   icon: {fileID: 30259529, guid: 7e646bddc94b6384b997ce5fe82b5d1b, type: 3}
   itemCategories: 1
-  stats: {fileID: 11400000, guid: a0cb60770da1ed44096adaebd56cabc9, type: 2}
+  stats: {fileID: 11400000, guid: 73d0bd3ffe6ab3f439db19fa5780862f, type: 2}
   WeaponPrefab: {fileID: 7218680394630544354, guid: 9a1a3fd6c376c3b4fa4e9cf2052195d3, type: 3}

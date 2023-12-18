@@ -27,6 +27,10 @@ public class QuickSlot : MonoBehaviour
 
     private void Update()
     {
+        if (_savedItem == null || !_inventory.CheckItemSO(_savedItem, 1))
+        {
+           ClearSlot();
+        }
         if (Input.GetKeyDown(input))
         {
             UseQuickSlot();
@@ -53,9 +57,7 @@ public class QuickSlot : MonoBehaviour
         }
         else
         {
-            amount.text = "";
-            icon.color = Color.clear;
-            _savedItem = null;
+            ClearSlot();
         }
     }
 
@@ -63,5 +65,12 @@ public class QuickSlot : MonoBehaviour
     private void DEBUG()
     {
         SaveItem(DEBUGITEM);
+    }
+
+    private void ClearSlot()
+    {
+        amount.text = "";
+        icon.color = Color.clear;
+        _savedItem = null;
     }
 }

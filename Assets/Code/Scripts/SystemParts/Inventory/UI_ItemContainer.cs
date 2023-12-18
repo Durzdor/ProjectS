@@ -31,6 +31,7 @@ public class UI_ItemContainer : MonoBehaviour, IPointerEnterHandler
         buttonIcon.sprite = item.Icon;
         buttonName.text = item.Identifier;
         buttonAmount.text = isEquipped;
+        _itemData = item; 
     }
 
     public void OnPointerEnter(PointerEventData eventData)
