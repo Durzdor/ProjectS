@@ -33,9 +33,9 @@ public class GameManager : MonoBehaviour
     public PlayerHealthBar PlayerHealthBar { get; private set; }
     public QuestManager QuestManager { get; private set; }
     public KillCountManager KillCountManager { get; private set; }
+    public Transform PlayerTransform { get; set; }
 
-    //public GameObject _winPanel;
-    //public GameObject _GOPanel;
+    
 
     private void Awake()
     {

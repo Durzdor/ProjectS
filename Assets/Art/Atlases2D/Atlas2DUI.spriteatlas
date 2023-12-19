@@ -214,6 +214,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 15d235018222e8140a3962f2ebb5e9f8, type: 3}
   - {fileID: 21300000, guid: 5cba21215bcee12419df4be7600e2491, type: 3}
   - {fileID: 21300000, guid: bc630261dfd3bce4f9640a9c81b42788, type: 3}
+  - {fileID: 21300000, guid: d495ac61a9278154c83318ef5470b8cb, type: 3}
   - {fileID: 21300000, guid: 1795de616115c2140a77981343d01e7e, type: 3}
   - {fileID: 21300000, guid: 581ea6912e64aa6439adb0e0c81ec65a, type: 3}
   - {fileID: 21300000, guid: 2096cfb1ec21a3248ac2110227ff6137, type: 3}
@@ -4011,6 +4012,7 @@ SpriteAtlas:
   - 93
   - resources_blue_bg
   - 8
+  - BaseIcon
   - 111
   - Gauge_ZombieSkinRotten_Thick_Full
   - RPG Weapons Dark Outline 64x64

@@ -39,12 +39,12 @@ public class CarController : MonoBehaviour
 
     private void InteractCar()
     {
-        //if (!_carModel.HasKey() && _playerOnProximity)
-        //{
-        //    GameManager.Instance.PopupManager.ShowMessage(
-        //        $"You need a {_carModel.Stats.Key.Identifier} to drive this");
-        //    return;
-        //}
+        if (!_carModel.HasKey() && _playerOnProximity)
+        {
+            GameManager.Instance.PopupManager.ShowMessage(
+                $"You need a {_carModel.Stats.Key.Identifier} to drive this");
+            return;
+        }
 
         if (_carModel.IsDriving)
         { 

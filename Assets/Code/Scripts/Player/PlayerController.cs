@@ -27,6 +27,12 @@ namespace Character
 
         #endregion
 
+        #region Eventos de Unity
+
+        private void Awake()
+        {
+            GameManager.Instance.PlayerTransform = transform;
+        }
 
         private void Start()
         {
@@ -54,6 +60,8 @@ namespace Character
             }
             if (Input.GetKeyDown(KeyCode.F)) _torchLight.SetActive(!_torchLight.activeInHierarchy);
         }
+
+        #endregion
 
         private void Attack()
         {

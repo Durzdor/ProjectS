@@ -98,6 +98,7 @@ public class CarModel : NPCModel
         _rb.mass = 99999;
         _rb.velocity = Vector2.zero;
         _isDriving = false;
+        GameManager.Instance.PlayerTransform = _player.transform;
     }
 
     public void CharacterEnterCar()
@@ -107,8 +108,9 @@ public class CarModel : NPCModel
         _miniMapCamera.SetFollow(transform);
         _rb.mass = 1;
         _isDriving = true;
+        GameManager.Instance.PlayerTransform = gameObject.transform;
     }
-    
+
     public bool HasKey()
     {
         return GameManager.Instance.PlayerInventory.CheckItemSO(stats.Key, 1);
